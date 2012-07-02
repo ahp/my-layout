@@ -1,0 +1,380 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<link rel="stylesheet" href="css/reset.css" type="text/css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>layout</title>
+<style >
+* {
+	padding:0;
+	margin:0;
+}
+body {
+}
+div {
+	outline:1px dashed black;
+}
+div.container {
+	width:1024px;
+	margin:0 auto;
+	background-color:#F5F4F2;
+}
+div.clear {
+	width:0;
+	height:0;
+	clear:both;
+}
+/*..........................header..........*/
+div.header {
+	width:auto;
+	height:200px;
+}
+div.leftheader {
+	width:300px;
+	float:left;
+	height:inherit;
+}
+div.rightheader {
+	width:auto;
+	margin-left:300px;
+	height:inherit;
+}
+/*--------------menu-----*/
+div.menu {
+	width:auto;
+	height:80px;
+	background-color:#F5F4F2;
+}
+div.menu ul {
+	width:500px;
+	list-style-type:none;
+	margin-left:20px;
+}
+div.menu li {
+	float:left;
+	position:relative;
+	margin-top:20px;
+}
+div.menu a {
+	padding:15px 10px;
+	display:block;
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:18px;
+	text-decoration:none;
+	color:#666;
+	text-transform:capitalize;
+}
+div.menu li:hover {
+	background-color:#CCCCCC;
+}
+ div.menu li:hvover a {
+ color:#C63;
+}
+/*--------------menu-----*/
+div.text {
+	background-color:#F5F4F2;
+	height:120px;
+	;
+}
+h2 {
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:24px;
+	font-style:normal;
+	text-shadow:#999;
+	font-weight:bolder;
+	text-transform:capitalize;
+	line-height:10px;
+	color:#333333;
+}
+p {
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:18px;
+	color:#999999;
+}
+/*.....................banner..*/
+
+div.banner {
+	width:auto;
+	height:350px;
+}
+/*.....................content1..*/
+	
+/*------------------left--------*/
+div.content {
+	width:auto;
+	height:314px;
+}
+div.left {
+	float:left;
+	width:350px;
+	height:inherit;
+}
+.imageleft {
+	width:350px;
+	height:133px;
+	margin:0 auto;
+}
+.textleft {
+	width:350px;
+	height:auto;
+}
+/*-----------------right--------*/
+
+div.right {
+	float:right;
+	width:350px;
+	height:inherit;
+ background-color:;
+}
+.imageright {
+	width:350px;
+	height:133px;
+}
+.textright {
+	width:35opx;
+	height:auto;
+}
+/*------------------center------------------*/
+div.center {
+	width:auto;
+	height:inherit;
+	margin:0 350px;
+}
+.imagecenter {
+	width:auto;
+	height:133px;
+}
+.textcenter {
+	width:350px;
+	height:auto;
+}
+/*.....................content1..*/
+div.content2 {
+	width:auto;
+	height:253px;
+}
+div.left1 {
+	width:250px;
+	height:inherit;
+	float:left;
+}
+h3{
+	color:#333;
+	font-family:Tahoma, Geneva, sans-serif;
+	font-weight:bold;
+	padding:15px 45px;
+	text-transform:capitalize;
+	
+	}
+.leftmenu{
+	
+	
+	}
+div.leftmenu ul{
+	   
+	
+	}
+div.leftmenu li{
+	list-style-type:disc;
+	list-style-position:inside;
+	}
+div.leftmenu a{
+	padding:15px 10px;
+	text-decoration:none;
+	color:#666;
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:16px;
+	text-transform:capitalize;
+	}
+	/*---------------------------*/
+div.left1{
+	width:250px;
+	height:inherit;
+	float:left;
+	}	
+div.left2 {
+	width:250px;
+	height:inherit;
+	float:left;
+}
+div.right2 {
+	width:250px;
+	height:inherit;
+	float:left;
+}
+.info{
+	color:#999999;
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:14px;
+	text-outline:none;
+	
+
+}
+
+div.right1 {
+	width:250px;
+	height:inherit;
+	float:right;
+	margin-left:auto;
+}
+#email{
+	
+	width:180px;
+	height:30px;
+	background-color:#CCC;
+	color:#FFFFFF;
+	}
+#ok{
+	width:30px;
+	height:30px;
+	background-color:#333;
+	color:#FFFFFF;
+	padding-left:0px;
+	
+	}
+
+/*.....................content2..*/
+div.footer {
+	width:auto;
+	height:150px
+}
+div.footerleft {
+	width:500px;
+	height:inherit;
+	float:left;
+	color:#999999;
+	font-size:12px;
+}
+div.footerright {
+	width:500px;
+	height:inherit;
+	margin-left:550px;
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+  <div class="header">
+    <div class="leftheader"> <img src="images/images/back5_01.gif" width="300" height="200" /> </div>
+    <div class="rightheader">
+      <div class="menu">
+        <ul>
+          <li><a href="#">home</a></li>
+          <li><a href="#">services</a></li>
+          <li><a href="#">gallery</a></li>
+          <li><a href="#">studio</a></li>
+          <li><a href="#">blog</a></li>
+          <li><a href="#">contact us</a></li>
+        </ul>
+      </div>
+      <div class="text">
+        <p>&nbsp;</p>
+        <h2>this is my site </h2>
+        <br />
+        <p> nnnbbbbbbbdgdsjsfhfdsjflsdflsdffffffffffffbbbbbbbbbfffg
+          nnbbbbbbbdgdsjsfhfdsjflsdflsdffffffffffffbbbbbbbbbfffgvnnbbb <br />
+          bbbbdgdsjsfhfdsjflsdflsdffffffffffffbbb </p>
+      </div>
+    </div>
+  </div>
+  <div class="banner"> <img src="images/images/back5_03.gif" width="1031" height="343" alt="banner" /></div>
+  <div class="content">
+    <div class="left">
+      <div class="imageleft"><img src="images/images/back5_04.gif" width="350" height="133" alt ="imageleft"  /></div>
+      <div class="textleft">bbbbb</div>
+    </div>
+    <div class="right">
+      <div class="imageright"> <img src="images/images/back5_0611.gif" width="303" height="130" alt="imageright" /> </div>
+      <div class="textright"></div>
+    </div>
+    <div class="center">
+      <div class="imagecenter"> <img src="images/images/back5_0511.gif" width="317" height="126" alt="imagecenter" /> </div>
+      <div class="textcenter"></div>
+    </div>
+  </div>
+ <div class="content2">
+    <div class="left1">
+    	<h3>menu bar</h3><br />
+         <div class="leftmenu">
+        <ul>
+          <li><a href="#">home</a></li>
+          <li><a href="#">services</a></li>
+          <li><a href="#">gallery</a></li>
+          <li><a href="#">studio</a></li>
+          <li><a href="#">blog</a></li>
+          <li><a href="#">contact us</a></li>
+        </ul>
+      </div>
+    
+    
+    </div>
+    <div class="left2">
+    
+    	<h3>related links:</h3><br />
+         <div class="leftmenu">
+        <ul>
+          
+          <li><a href="#">services</a></li>
+          <li><a href="#">music</a></li>
+          <li><a href="#">studio</a></li>
+          <li><a href="#">books</a></li>
+          <li><a href="#">aboutus</a></li>
+        </ul>
+      </div>
+    
+    
+    
+    
+    </div>
+    <div class="right2">
+    	<h3>contact us:</h3><br />
+         <div class="leftmenu">
+        <ul class="info">
+          <li > <img src="images/images/tell.jpg" width="20" height="20 " />
+          6543338-6547896
+          </li><br />
+          <li>@ &nbsp;&nbsp;akh@hhki.com</li><br />
+          <li> <img src="images/images/mail.jpg" width="20" height="20 " />&nbsp;&nbsp;france,paris,no656</li><br />
+          <li>&nbsp;&nbsp;map</li>
+          
+        </ul>
+      </div>
+    
+    
+    
+    </div>
+    <div class="right1">
+    	<h3>news letter</h3><br />
+         <div class="leftmenu">
+        <ul>
+          <li class="info">if you want take last news<br />
+      &nbsp;&nbsp;    enter your email here:</li><br />
+          <li class="info">
+         <div class="form"> 	<form >
+            <input id="email" type="text" name="email" value="your mail" />&nbsp;&nbsp;
+            <input id="ok" type="submit" name="ok" value="ok" />
+            </form></div>
+          </li><br />
+          <li class="info">if you want take last news<br />
+      &nbsp;&nbsp;    enter your email here:</li>
+          
+        </ul>
+      </div>
+    
+    
+    
+    </div>
+  </div>
+  
+  <div class="footer">
+    <div class="footerleft"><br />
+    copy right 2012 &nbsp;&copy; &nbsp;impala webstudio
+    </div>
+    <div class="footerright">
+    <img src="images/images/back5_11.gif" width="252" height="142" /></div>
+  </div>
+  <div class="clear"></div>
+</div>
+</body>
+</html>
