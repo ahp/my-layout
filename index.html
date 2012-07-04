@@ -1,7 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<link rel="stylesheet" href="css/reset.css" type="text/css" />
+<link rel="stylesheet" href="../layout/css/reset.css" type="text/css" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>layout</title>
 <style >
@@ -61,24 +61,26 @@ div.menu a {
 	font-family:Tahoma, Geneva, sans-serif;
 	font-size:18px;
 	text-decoration:none;
-	color:#666;
+	color:#B2B1AF;
 	text-transform:capitalize;
 }
 div.menu li:hover {
-	background-color:#CCCCCC;
+	background-color:f5f4f2;
 }
  div.menu li:hvover a {
- color:#C63;
+ color:#3c3c3c;
 }
+ div.menu li:active a {
+	 color:3C3C3C;}
 /*--------------menu-----*/
 div.text {
 	background-color:#F5F4F2;
 	height:120px;
-	;
+	
 }
 h2 {
-	font-family:Tahoma, Geneva, sans-serif;
-	font-size:24px;
+	font-family: candara, tahoma;
+	font-size:18px;
 	font-style:normal;
 	text-shadow:#999;
 	font-weight:bolder;
@@ -87,7 +89,7 @@ h2 {
 	color:#333333;
 }
 p {
-	font-family:Tahoma, Geneva, sans-serif;
+	font-family: candara, tahoma;
 	font-size:18px;
 	color:#999999;
 }
@@ -104,6 +106,16 @@ div.content {
 	width:auto;
 	height:314px;
 }
+img.op
+{
+opacity:1.0;
+filter:alpha(opacity=40); /* For IE8 and earlier */
+}
+ img:hover
+{
+opacity:0.6;
+filter:alpha(opacity=100); /* For IE8 and earlier */
+}
 div.left {
 	float:left;
 	width:350px;
@@ -114,9 +126,10 @@ div.left {
 	height:133px;
 	margin:0 auto;
 }
-.textleft {
+.textleft,right,center {
 	width:350px;
 	height:auto;
+	color:#D0B2B1;
 }
 /*-----------------right--------*/
 
@@ -256,42 +269,42 @@ div.footerright {
 <body>
 <div class="container">
   <div class="header">
-    <div class="leftheader"> <img src="images/images/back5_01.gif" width="300" height="200" /> </div>
+    <div class="leftheader"> <img src="../layout/images/images/back5_01.gif" width="300" height="200" /> </div>
     <div class="rightheader">
       <div class="menu">
         <ul>
-          <li><a href="#">home</a></li>
-          <li><a href="#">services</a></li>
-          <li><a href="#">gallery</a></li>
+          <li><a href="#">accueil</a></li>
           <li><a href="#">studio</a></li>
+          <li><a href="#">services</a></li>
+          <li><a href="#">portfolio</a></li>
           <li><a href="#">blog</a></li>
-          <li><a href="#">contact us</a></li>
+          <li><a href="#">contact </a></li>
         </ul>
       </div>
       <div class="text">
         <p>&nbsp;</p>
-        <h2>this is my site </h2>
+        <h2>Une agence web à taille humaine, une équipe à votre écoute. </h2>
         <br />
-        <p> nnnbbbbbbbdgdsjsfhfdsjflsdflsdffffffffffffbbbbbbbbbfffg
-          nnbbbbbbbdgdsjsfhfdsjflsdflsdffffffffffffbbbbbbbbbfffgvnnbbb <br />
-          bbbbdgdsjsfhfdsjflsdflsdffffffffffffbbb </p>
+        <p>Chez Impala Webstudio, nous sommes une équipe de passionnés, créative et dynamique. Nous réalisons des sites internet clairs et efficaces. De la simplicité en somme, pour vous et vos clients.  </p>
       </div>
     </div>
   </div>
-  <div class="banner"> <img src="images/images/back5_03.gif" width="1031" height="343" alt="banner" /></div>
+  <div class="banner"> <img src="../layout/images/images/back5_03.gif" width="1031" height="343" alt="banner" /></div>
+  
   <div class="content">
     <div class="left">
-      <div class="imageleft"><img src="images/images/back5_04.gif" width="350" height="133" alt ="imageleft"  /></div>
+      <div class="imageleft"><img class="op" src="../layout/images/images/back5_04.gif" width="350" height="133" alt ="imageleft"  /></div>
       <div class="textleft">bbbbb</div>
     </div>
     <div class="right">
-      <div class="imageright"> <img src="images/images/back5_0611.gif" width="303" height="130" alt="imageright" /> </div>
+      <div class="imageright"> <img clss="op" src="../layout/images/images/back5_0611.gif" width="303" height="130" alt="imageright" /> </div>
       <div class="textright"></div>
     </div>
     <div class="center">
-      <div class="imagecenter"> <img src="images/images/back5_0511.gif" width="317" height="126" alt="imagecenter" /> </div>
+      <div class="imagecenter"> <img class="op" src="../layout/images/images/back5_0511.gif" width="317" height="126" alt="imagecenter" /> </div>
       <div class="textcenter"></div>
     </div>
+    <div class="clear"></div>
   </div>
  <div class="content2">
     <div class="left1">
@@ -331,11 +344,11 @@ div.footerright {
     	<h3>contact us:</h3><br />
          <div class="leftmenu">
         <ul class="info">
-          <li > <img src="images/images/tell.jpg" width="20" height="20 " />
+          <li > <img src="../layout/images/images/tell.jpg" width="20" height="20 " />
           6543338-6547896
           </li><br />
           <li>@ &nbsp;&nbsp;akh@hhki.com</li><br />
-          <li> <img src="images/images/mail.jpg" width="20" height="20 " />&nbsp;&nbsp;france,paris,no656</li><br />
+          <li> <img src="../layout/images/images/mail.jpg" width="20" height="20 " />&nbsp;&nbsp;france,paris,no656</li><br />
           <li>&nbsp;&nbsp;map</li>
           
         </ul>
@@ -372,7 +385,7 @@ div.footerright {
     copy right 2012 &nbsp;&copy; &nbsp;impala webstudio
     </div>
     <div class="footerright">
-    <img src="images/images/back5_11.gif" width="252" height="142" /></div>
+    <img src="../layout/images/images/back5_11.gif" width="252" height="142" /></div>
   </div>
   <div class="clear"></div>
 </div>
