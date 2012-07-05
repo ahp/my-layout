@@ -29,6 +29,7 @@ div.header {
 	width:auto;
 	height:200px;
 	background-color:#f5f4f2;
+	padding-left:30px;
 }
 div.leftheader {
 	width:300px;
@@ -117,8 +118,10 @@ img:hover {
 }
 div.left {
 	float:left;
-	width:350px;
+	width:300px;
 	height:inherit;
+	padding-left:30px;
+	padding-right:30px;
 }
 .imageleft {
 	position:relative;
@@ -177,6 +180,13 @@ div.center {
 .textcenter {
  width:auto  height:auto;
 }
+.dot{
+	width:auto;
+	height:20px;
+	font-size:24px;
+	color:#333;
+	
+	}
 /*.....................content1..*/
 div.content2 {
 	width:auto;
@@ -192,7 +202,7 @@ h3 {
 	font-family:Tahoma, Geneva, sans-serif;
 	font-weight:bold;
 	padding:15px 45px;
-	text-transform:capitalize;
+	text-transform:uppercase;
 }
 .leftmenu {
 }
@@ -264,7 +274,7 @@ div.footerleft {
 	font-size:12px;
 }
 div.footerright {
-	width:500px;
+	width:auto;
 	height:inherit;
 	margin-left:550px;
 }
@@ -274,7 +284,11 @@ div.footerright {
 <body>
 <div class="container">
   <div class="header">
-    <div class="leftheader"> <img src="../layout/images/images/back5_01.gif" width="300" height="200" /> </div>
+    <div class="leftheader">
+    	<img src="images/images/back5_01.gif" width="300" height="200" />
+    
+    
+    </div>
     <div class="rightheader">
       <div class="menu">
         <ul>
@@ -294,7 +308,7 @@ div.footerright {
       </div>
     </div>
   </div>
-  <div class="banner"> <img src="../layout/images/images/back5_03.gif" width="1031" height="343" alt="banner" /></div>
+  <div class="banner"> <img src="../layout/images/images/back5_03.gif" width="1024" height="343" alt="banner" /></div>
   <div class="content">
     <div class="left">
       <div class="imageleft">
@@ -318,9 +332,16 @@ div.footerright {
     </div>
     <div class="clear"></div>
   </div>
+  <div class="dot">&nbsp;&nbsp;.....................................................................................................................................................................</div>  
+  <br>
+  <br >
+  
+ 
+
+  
   <div class="content2">
     <div class="left1">
-      <h3>menu bar</h3>
+      <h3>impala webstudio</h3>
       <br />
       <div class="leftmenu">
         <ul>
@@ -385,12 +406,15 @@ div.footerright {
       </div>
     </div>
   </div>
+    <div class="dot">&nbsp;&nbsp;.....................................................................................................................................................................</div>  
+  <br>
+  <br >
   <div class="footer">
     <div class="footerleft"><br />
       copy right 2012 &nbsp;&copy; &nbsp;impala webstudio </div>
-    <div class="footerright"> <img src="../layout/images/images/back5_11.gif" width="252" height="142" /></div>
+    <div class="footerright"> <img src="../layout/images/images/back5_11.gif" width="100" height="142" /></div>
   </div>
-  <div class="clear"></div>
+<div class="clear"></div>
 </div>
 </body>
 </html>
