@@ -28,6 +28,7 @@ div.clear {
 div.header {
 	width:auto;
 	height:200px;
+	background-color:#f5f4f2;
 }
 div.leftheader {
 	width:300px;
@@ -70,17 +71,17 @@ div.menu li:hover {
  div.menu li:hvover a {
  color:#3c3c3c;
 }
- div.menu li:active a {
-	 color:3C3C3C;}
+div.menu li:active a {
+	color:3C3C3C;
+}
 /*--------------menu-----*/
 div.text {
 	background-color:#F5F4F2;
 	height:120px;
-	
 }
 h2 {
-	font-family:
-	font-size:18px;
+ font-family:
+ font-size:18px;
 	font-style:normal;
 	text-shadow:#999;
 	font-weight:bolder;
@@ -106,15 +107,13 @@ div.content {
 	width:auto;
 	height:314px;
 }
-img.op
-{
-opacity:1.0;
-filter:alpha(opacity=40); /* For IE8 and earlier */
+img.op {
+	opacity:1.0;
+	filter:alpha(opacity=40); /* For IE8 and earlier */
 }
- img:hover
-{
-opacity:0.6;
-filter:alpha(opacity=100); /* For IE8 and earlier */
+img:hover {
+	opacity:0.6;
+	filter:alpha(opacity=100); /* For IE8 and earlier */
 }
 div.left {
 	float:left;
@@ -122,14 +121,32 @@ div.left {
 	height:inherit;
 }
 .imageleft {
+	position:relative;
+	left:0;
+	
+	top:0;
+	z-index:0;
 	width:350px;
 	height:133px;
 	margin:0 auto;
 }
-.textleft,right,center {
+.textleft, right, center {
 	width:350px;
 	height:auto;
 	color:#D0B2B1;
+}
+img.op{
+	position:absolute;
+	
+	z-index:-1;
+}
+h4{
+	background-color:#CC0;
+	font-family:consolas, candara, tahoma;
+	font-size:16px;
+	text-transform:capitalize;
+	width:120px;
+	height:30px;
 }
 /*-----------------right--------*/
 
@@ -144,7 +161,7 @@ div.right {
 	height:133px;
 }
 .textright {
-	width:350px;
+	width:35opx;
 	height:auto;
 }
 /*------------------center------------------*/
@@ -158,8 +175,7 @@ div.center {
 	height:133px;
 }
 .textcenter {
-	width:auto;
-	height:auto;
+ width:auto  height:auto;
 }
 /*.....................content1..*/
 div.content2 {
@@ -171,40 +187,35 @@ div.left1 {
 	height:inherit;
 	float:left;
 }
-h3{
+h3 {
 	color:#333;
 	font-family:Tahoma, Geneva, sans-serif;
 	font-weight:bold;
 	padding:15px 45px;
 	text-transform:capitalize;
-	
-	}
-.leftmenu{
-	
-	
-	}
-div.leftmenu ul{
-	   
-	
-	}
-div.leftmenu li{
+}
+.leftmenu {
+}
+div.leftmenu ul {
+}
+div.leftmenu li {
 	list-style-type:disc;
 	list-style-position:inside;
-	}
-div.leftmenu a{
+}
+div.leftmenu a {
 	padding:15px 10px;
 	text-decoration:none;
 	color:#666;
 	font-family:Tahoma, Geneva, sans-serif;
 	font-size:16px;
 	text-transform:capitalize;
-	}
-	/*---------------------------*/
-div.left1{
+}
+/*---------------------------*/
+div.left1 {
 	width:250px;
 	height:inherit;
 	float:left;
-	}	
+}
 div.left2 {
 	width:250px;
 	height:inherit;
@@ -215,37 +226,31 @@ div.right2 {
 	height:inherit;
 	float:left;
 }
-.info{
+.info {
 	color:#999999;
 	font-family:Tahoma, Geneva, sans-serif;
 	font-size:14px;
 	text-outline:none;
-	
-
 }
-
 div.right1 {
 	width:250px;
 	height:inherit;
 	float:right;
 	margin-left:auto;
 }
-#email{
-	
+#email {
 	width:180px;
 	height:30px;
 	background-color:#CCC;
 	color:#FFFFFF;
-	}
-#ok{
+}
+#ok {
 	width:30px;
 	height:30px;
 	background-color:#333;
 	color:#FFFFFF;
 	padding-left:0px;
-	
-	}
-
+}
 /*.....................content2..*/
 div.footer {
 	width:auto;
@@ -285,35 +290,39 @@ div.footerright {
         <p>&nbsp;</p>
         <h2>Une agence web à taille humaine, une équipe à votre écoute. </h2>
         <br />
-        <p>Chez Impala Webstudio, nous sommes une équipe de passionnés, créative et dynamique. Nous réalisons des sites internet clairs et efficaces. De la simplicité en somme, pour vous et vos clients.  </p>
+        <p>Chez Impala Webstudio, nous sommes une équipe de passionnés, créative et dynamique. Nous réalisons des sites internet clairs et efficaces. De la simplicité en somme, pour vous et vos clients. </p>
       </div>
     </div>
   </div>
   <div class="banner"> <img src="../layout/images/images/back5_03.gif" width="1031" height="343" alt="banner" /></div>
-  
   <div class="content">
     <div class="left">
-      <div class="imageleft"><img class="op" src="../layout/images/images/back5_04.gif" width="350" height="133" alt ="imageleft"  /></div>
+      <div class="imageleft">
+        <h4> l equipe</h4>
+        <img class="op" src="images/images/visuel_equipe.jpg" width=" height="133" alt ="imageleft"  /></div>
       <div class="textleft">C’est dans l’enceinte d’une ancienne école que l’équipe d’Impala Webstudio active ses méninges et sa créativité. Un lieu avant tout convivial, où le travail et la bonne humeur font bon ménage.</div>
     </div>
     <div class="right">
-      <div class="imageright"> <img clss="op" src="../layout/images/images/back5_0611.gif" width="303" height="130" alt="imageright" /> </div>
+      <div class="imageright"> 
+      	<h4>en coulisses</h4>
+      <img class="op" src="images/images/visuel_coulisses.jpg" width="303" height="130" alt="imageright" /> </div>
       <div class="textright">
-      <p>Les dessous de l’agence, la vie au 43 rue Charlie Chaplin, les dernières actualités, mais aussi les nouvelles réalisations... En parcourant notre blog, plongez dans les coulisses d’Impala Webstudio
-      </p></div>
+        <p>Les dessous de l’agence, la vie au 43 rue Charlie Chaplin, les dernières actualités, mais aussi les nouvelles réalisations... En parcourant notre blog, plongez dans les coulisses d’Impala Webstudio </p>
+      </div>
     </div>
     <div class="center">
-      <div class="imagecenter"> <img class="op" src="../layout/images/images/back5_0511.gif" width="317" height="126" alt="imagecenter" /> </div>
+      <div class="imagecenter"> <img class="op" src="images/images/visuel_cafe.jpg" width="317" height="126" alt="imagecenter" /> </div>
       <div class="textcenter">
-      <p>Grands buveurs de café que nous sommes, nous serons ravis de vous offrir une petite tasse de ce breuvage torréfié. Alors si vous passez dans le coin, n’hésitez pas ! ... Avec ou sans sucre ?</p>
+        <p>Grands buveurs de café que nous sommes, nous serons ravis de vous offrir une petite tasse de ce breuvage torréfié. Alors si vous passez dans le coin, n’hésitez pas ! ... Avec ou sans sucre ?</p>
       </div>
     </div>
     <div class="clear"></div>
   </div>
- <div class="content2">
+  <div class="content2">
     <div class="left1">
-    	<h3>menu bar</h3><br />
-         <div class="leftmenu">
+      <h3>menu bar</h3>
+      <br />
+      <div class="leftmenu">
         <ul>
           <li><a href="#">home</a></li>
           <li><a href="#">services</a></li>
@@ -323,15 +332,12 @@ div.footerright {
           <li><a href="#">contact us</a></li>
         </ul>
       </div>
-    
-    
     </div>
     <div class="left2">
-    
-    	<h3>related links:</h3><br />
-         <div class="leftmenu">
+      <h3>related links:</h3>
+      <br />
+      <div class="leftmenu">
         <ul>
-          
           <li><a href="#">services</a></li>
           <li><a href="#">music</a></li>
           <li><a href="#">studio</a></li>
@@ -339,57 +345,50 @@ div.footerright {
           <li><a href="#">aboutus</a></li>
         </ul>
       </div>
-    
-    
-    
-    
     </div>
     <div class="right2">
-    	<h3>contact us:</h3><br />
-         <div class="leftmenu">
+      <h3>contact us:</h3>
+      <br />
+      <div class="leftmenu">
         <ul class="info">
-          <li > <img src="../layout/images/images/tell.jpg" width="20" height="20 " />
-          6543338-6547896
-          </li><br />
-          <li>@ &nbsp;&nbsp;akh@hhki.com</li><br />
-          <li> <img src="../layout/images/images/mail.jpg" width="20" height="20 " />&nbsp;&nbsp;france,paris,no656</li><br />
+          <li > <img src="../layout/images/images/tell.jpg" width="20" height="20 " /> 6543338-6547896 </li>
+          <br />
+          <li>@ &nbsp;&nbsp;akh@hhki.com</li>
+          <br />
+          <li> <img src="../layout/images/images/mail.jpg" width="20" height="20 " />&nbsp;&nbsp;france,paris,no656</li>
+          <br />
           <li>&nbsp;&nbsp;map</li>
-          
         </ul>
       </div>
-    
-    
-    
     </div>
     <div class="right1">
-    	<h3>news letter</h3><br />
-         <div class="leftmenu">
+      <h3>news letter</h3>
+      <br />
+      <div class="leftmenu">
         <ul>
           <li class="info">if you want take last news<br />
-      &nbsp;&nbsp;    enter your email here:</li><br />
+            &nbsp;&nbsp;    enter your email here:</li>
+          <br />
           <li class="info">
-         <div class="form"> 	<form >
-            <input id="email" type="text" name="email" value="your mail" />&nbsp;&nbsp;
-            <input id="ok" type="submit" name="ok" value="ok" />
-            </form></div>
-          </li><br />
+            <div class="form">
+              <form >
+                <input id="email" type="text" name="email" value="your mail" />
+                &nbsp;&nbsp;
+                <input id="ok" type="submit" name="ok" value="ok" />
+              </form>
+            </div>
+          </li>
+          <br />
           <li class="info">if you want take last news<br />
-      &nbsp;&nbsp;    enter your email here:</li>
-          
+            &nbsp;&nbsp;    enter your email here:</li>
         </ul>
       </div>
-    
-    
-    
     </div>
   </div>
-  
   <div class="footer">
     <div class="footerleft"><br />
-    copy right 2012 &nbsp;&copy; &nbsp;impala webstudio
-    </div>
-    <div class="footerright">
-    <img src="../layout/images/images/back5_11.gif" width="252" height="142" /></div>
+      copy right 2012 &nbsp;&copy; &nbsp;impala webstudio </div>
+    <div class="footerright"> <img src="../layout/images/images/back5_11.gif" width="252" height="142" /></div>
   </div>
   <div class="clear"></div>
 </div>
