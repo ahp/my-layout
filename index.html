@@ -3,7 +3,7 @@
 <head>
 <link rel="stylesheet" href="../layout/css/reset.css" type="text/css" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>layoddddddddut 2</title>
+<title></title>
 <style >
 * {
 	padding:0;
@@ -81,19 +81,19 @@ div.text {
 	height:120px;
 }
 h2 {
- font-family:
+ font-family: candara, tahoma;
  font-size:18px;
 	font-style:normal;
 	text-shadow:#999;
 	font-weight:bolder;
 	text-transform:capitalize;
 	line-height:10px;
-	color:#333333;
+	color:#999;
 }
 p {
 	font-family: candara, tahoma;
 	font-size:18px;
-	color:#009;
+	color:#999;
 }
 /*.....................banner..*/
 
@@ -121,7 +121,7 @@ div.left {
 	width:300px;
 	height:inherit;
 	padding-left:30px;
-	padding-right:30px;
+	padding-right:20px;
 }
 .imageleft {
 	position:relative;
@@ -129,15 +129,14 @@ div.left {
 	
 	top:0;
 	z-index:0;
-	width:350px;
+	width:300px;
 	height:133px;
 	margin:0 auto;
 }
-.textleft, right, center {
-	width:350px;
-	height:auto;
-	color:#D0B2B1;
-}
+p.textc{
+	font-family: candara, tahoma;
+	font-size:14px;
+	color:#999;}
 img.op{
 	position:absolute;
 	
@@ -148,25 +147,27 @@ h4{
 	font-family:consolas, candara, tahoma;
 	font-size:16px;
 	text-transform:capitalize;
-	width:120px;
+	width:140px;
 	height:30px;
 }
 /*-----------------right--------*/
 
 div.right {
 	float:right;
-	width:350px;
+	width:300px;
 	height:inherit;
+	padding-left:0;
+	padding-right:30px;
+	
+	
  background-color:;
 }
 .imageright {
-	width:350px;
+	width:300px;
 	height:133px;
 }
-.textright {
-	width:35opx;
-	height:auto;
-}
+
+
 /*------------------center------------------*/
 div.center {
 	width:auto;
@@ -177,9 +178,8 @@ div.center {
 	width:auto;
 	height:133px;
 }
-.textcenter {
- width:auto  height:auto;
-}
+
+
 .dot{
 	width:auto;
 	height:20px;
@@ -200,9 +200,11 @@ div.left1 {
 h3 {
 	color:#333;
 	font-family:Tahoma, Geneva, sans-serif;
-	font-weight:bold;
-	padding:15px 45px;
+	width:150px;
+	padding:15px 0px;
 	text-transform:uppercase;
+	white-space:nowrap;
+	font-size:14px;
 }
 .leftmenu {
 }
@@ -313,22 +315,32 @@ div.footerright {
     <div class="left">
       <div class="imageleft">
         <h4> l equipe</h4>
-        <img class="op" src="images/images/visuel_equipe.jpg" width=" height="133" alt ="imageleft"  /></div>
-      <div class="textleft">C’est dans l’enceinte d’une ancienne école que l’équipe d’Impala Webstudio active ses méninges et sa créativité. Un lieu avant tout convivial, où le travail et la bonne humeur font bon ménage.</div>
+        <img src="images/images/visuel_equipe.jpg" width="300" height="109" alt="visuel_equipe" />
+   </div>
+      
+      	<br /><br />
+      <p class="textc">
+      C’est dans l’enceinte d’une ancienne école que l’équipe d’Impala Webstudio active ses méninges et sa créativité. Un lieu avant tout convivial, où le travail et la bonne humeur font bon ménage.</p>
+      
     </div>
     <div class="right">
       <div class="imageright"> 
       	<h4>en coulisses</h4>
-      <img class="op" src="images/images/visuel_coulisses.jpg" width="303" height="130" alt="imageright" /> </div>
-      <div class="textright">
-        <p>Les dessous de l’agence, la vie au 43 rue Charlie Chaplin, les dernières actualités, mais aussi les nouvelles réalisations... En parcourant notre blog, plongez dans les coulisses d’Impala Webstudio </p>
-      </div>
+              <img src="images/images/visuel_coulisses.jpg" width="300" height="109" alt="visuel_cafe" />
+  
+       </div>
+    	 	<br /><br />
+      <p class="textc">Les dessous de l’agence, la vie au 43 rue Charlie Chaplin, les dernières actualités, mais aussi les nouvelles réalisations... En parcourant notre blog, plongez dans les coulisses d’Impala Webstudio.
+
+
+      </p>
+      
     </div>
     <div class="center">
-      <div class="imagecenter"> <img class="op" src="images/images/visuel_cafe.jpg" width="317" height="126" alt="imagecenter" /> </div>
-      <div class="textcenter">
-        <p>Grands buveurs de café que nous sommes, nous serons ravis de vous offrir une petite tasse de ce breuvage torréfié. Alors si vous passez dans le coin, n’hésitez pas ! ... Avec ou sans sucre ?</p>
-      </div>
+    <h4>en coulisses</h4>
+            <img src="images/images/visuel_cafe.jpg" width="300" height="109" alt="visuel_cafe" />
+       	<br /><br /><br />
+      <p class="textc">Grands buveurs de café que nous sommes, nous serons ravis de vous offrir une petite tasse de ce breuvage torréfié. Alors si vous passez dans le coin, n’hésitez pas ! ... Avec ou sans sucre ?</p>
     </div>
     <div class="clear"></div>
   </div>
@@ -355,7 +367,7 @@ div.footerright {
       </div>
     </div>
     <div class="left2">
-      <h3>related links:</h3>
+      <h3>Quoi de neuf ?</h3>
       <br />
       <div class="leftmenu">
         <ul>
@@ -368,7 +380,7 @@ div.footerright {
       </div>
     </div>
     <div class="right2">
-      <h3>contact us:</h3>
+      <h3>Restons en contact</h3>
       <br />
       <div class="leftmenu">
         <ul class="info">
@@ -383,7 +395,7 @@ div.footerright {
       </div>
     </div>
     <div class="right1">
-      <h3>news letter</h3>
+      <h3>Recevez notre Newsletter</h3>
       <br />
       <div class="leftmenu">
         <ul>
