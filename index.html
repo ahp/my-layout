@@ -3,7 +3,8 @@
 <head>
 <link rel="stylesheet" href="../layout/css/reset.css" type="text/css" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title></title>
+<title>Création de sites Internet sur Lille - Spécialiste Wordpress et Prestashop - Impala Webstudio</title>
+<link rel="icon" type="image/png" href="http://www.impala-webstudio.fr/favicon.png" />
 <style >
 * {
 	padding:0;
@@ -202,8 +203,8 @@ div.leftmenu {
 	
 }
 div.leftmenu ul {
-	width:300px;
-	height:150px;
+	width:220px;
+	
 }
 div.leftmenu li {
 	list-style-type:none;
@@ -214,11 +215,11 @@ div.leftmenu a {
 	padding:15px 10px;
 	text-decoration:none;
 	color:#666;
-	font-family:Tahoma, Geneva, sans-serif;
+	font-family: candara, tahoma;
 	font-size:12px;
 	text-transform:capitalize;
-	text-justify:distribute;
-	line-height:30px;
+	text-align:justify;
+		line-height:10px;
 }
 /*---------------------------*/
 div.left1 {
@@ -228,17 +229,17 @@ div.left1 {
 	padding:0 30px;
 }
 div.left2 {
-	width:180px;
+	width:260px;
 	height:inherit;
 	float:left;
-	padding:0 50px;
+	padding:0 5px;
 	color:#666;
 }
 div.right2 {
-	width:170px;
+	width:200px;
 	height:inherit;
 	float:left;
-	padding:0 30px;
+	padding:0 10px;
 }
 #tell{
 	list-style-image:url(images/images/tell.jpg);
@@ -251,10 +252,19 @@ div.right2 {
 		background-color:#DBDF05;
 	
 		line-height:15px;}
+.info1{
+	font-family: candara, tahoma;
+	font-size:12px;
+	font-size:12px;
+	text-transform:capitalize;
+	text-align:justify;
+		line-height:10px;
+		color:#666;
+	}		
 .info {
 	color:#999999;
 	font-family:Tahoma, Geneva, sans-serif;
-	font-size:14px;
+	font-size:10px;
 	text-outline:none;
 }
 div.right1 {
@@ -264,23 +274,32 @@ div.right1 {
 	margin-left:auto;
 }
 #email {
-	width:180px;
+	width:150px;
 	height:30px;
-	background-color:#CCC;
+	background-color:#E2E1DD;
 	color:#FFFFFF;
+	padding-right:0;
 }
 #mail{
 		list-style-image:url(images/images/mail.jpg);
 		background-color:#DBDF05;
 		width:150px;
-		height:15px;}
+		height:40px;}
+		
+		#map{
+			list-style-image:url(images/images/back5_09.gif);}
 #ok {
-	width:30px;
-	height:30px;
-	background-color:#333;
-	color:#FFFFFF;
-	padding-left:0px;
+	width:40px;
+	height:40px;
+	background-color:#C7C6C4;
+	color:#747372;
+	padding-left:0;
 }
+form :hover{
+	background-color:#CCC;}
+	
+	
+
 /*.....................content2..*/
 div.footer {
 	width:auto;
@@ -293,6 +312,9 @@ div.footerleft {
 	color:#999999;
 	font-size:12px;
 }
+#copy a{
+	color:#999999;
+	}
 div.footerright {
 	width:auto;
 	height:inherit;
@@ -377,11 +399,11 @@ div.footerright {
         <br />
         <div class="leftmenu">
       <ul>
-        <li id="yek"><a href="#">&raquo;&nbsp;Responsive design. Ou comment faire<br />
-       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  entrer une girafe dans une Twingo en trois<br />
-       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; temps</li><br />
-        <li id="do"><a href="#">&raquo;&nbsp;Musique maestro</li><br />
-        <li id="se"><a href="#">&raquo;&nbsp;♬ J’entends le loup, le renard et la belette…</li><br />
+        <li id="yek"><a href="#">&raquo;&nbsp;
+
+    Responsive design. Ou comment faire entrer une girafe dans une Twingo en trois temps</li>
+        <li id="do"><a href="#">&raquo;&nbsp;Musique maestro</li>
+        <li id="se"><a href="#">&raquo;&nbsp;♬ J’entends le loup, le renard et la belette…</li>
         <li id="char"><a href="#">&raquo;&nbsp;La véritable nature des Impalas</li>
       </ul>
     </div>
@@ -392,14 +414,14 @@ div.footerright {
     <div class="leftmenu">
       <ul class="info">
         <li id="tell" >&nbsp;03 20 26 96 25 </li>
-        <br />
+       
         <li id="emaila">@ &nbsp;&nbsp;contact@impala-webstudio.fr</li>
-        <br />
+        
         <li id="mail">&nbsp;&nbsp;43 rue Charlie Chaplin<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;59100 ROUBAIX</li>
-        <br />
-        <li>&nbsp;&nbsp;Trouvez-nous rapidement<br />
-&nbsp;&nbsp;sur Google Maps</li>
+        
+        <li id="map">&nbsp;&nbsp;Trouvez-nous rapidement<br />
+&nbsp;&nbsp;&nbsp;&nbsp;sur<a href="#"> Google Maps</a></li>
       </ul>
     </div>
   </div>
@@ -408,21 +430,22 @@ div.footerright {
     <br />
     <div class="leftmenu">
       <ul>
-        <li class="info">if you want take last news<br />
-          &nbsp;&nbsp;    enter your email here:</li>
+        <li class="info1">Restez informés des dernières actus et potins de l'agence !</li>
         <br />
         <li class="info">
           <div class="form">
             <form >
-              <input id="email" type="text" name="email" value="your mail" />
-              &nbsp;&nbsp;
+              <input id="email" type="text" name="email" value="votr email ici" />
+              
               <input id="ok" type="submit" name="ok" value="ok" />
             </form>
           </div>
         </li>
         <br />
-        <li class="info">if you want take last news<br />
-          &nbsp;&nbsp;    enter your email here:</li>
+        <li class="info">
+
+Votre adresse email ne sera en aucun cas revendue, ou utilisée par une société autre que la nôtre.
+</li>
       </ul>
     </div>
   </div>
@@ -432,7 +455,9 @@ div.footerright {
 <br >
 <div class="footer">
   <div class="footerleft"><br />
-    copy right 2012 &nbsp;&copy; &nbsp;impala webstudio </div>
+    copy right 2012 &nbsp;&copy; &nbsp;impala webstudio - Tous droits réservés.<br />
+    
+Site déclaré à la CNIL -<a id="copy" href="#"> Mentions légales</a></div>
   <div class="footerright"> <img src="../layout/images/images/back5_11.gif" width="100" height="142" /></div>
 </div>
 <div class="clear"></div>
