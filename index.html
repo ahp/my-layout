@@ -202,11 +202,13 @@ div.leftmenu {
 	
 }
 div.leftmenu ul {
-	width:250px;
+	width:300px;
+	height:150px;
 }
 div.leftmenu li {
 	list-style-type:none;
 	list-style-position:inside;
+	
 }
 div.leftmenu a {
 	padding:15px 10px;
@@ -215,7 +217,8 @@ div.leftmenu a {
 	font-family:Tahoma, Geneva, sans-serif;
 	font-size:12px;
 	text-transform:capitalize;
-	text-align:left;
+	text-justify:distribute;
+	line-height:30px;
 }
 /*---------------------------*/
 div.left1 {
@@ -232,11 +235,22 @@ div.left2 {
 	color:#666;
 }
 div.right2 {
-	width:190px;
+	width:170px;
 	height:inherit;
 	float:left;
 	padding:0 30px;
 }
+#tell{
+	list-style-image:url(images/images/tell.jpg);
+	list-style-position:inside;
+	background-color:#DBDF05;
+	line-height:15px;
+	width:120px;
+	}
+	#emaila{
+		background-color:#DBDF05;
+	
+		line-height:15px;}
 .info {
 	color:#999999;
 	font-family:Tahoma, Geneva, sans-serif;
@@ -255,6 +269,11 @@ div.right1 {
 	background-color:#CCC;
 	color:#FFFFFF;
 }
+#mail{
+		list-style-image:url(images/images/mail.jpg);
+		background-color:#DBDF05;
+		width:150px;
+		height:15px;}
 #ok {
 	width:30px;
 	height:30px;
@@ -358,10 +377,12 @@ div.footerright {
         <br />
         <div class="leftmenu">
       <ul>
-        <li id="yek"><a href="#">&raquo;&nbsp;Responsive design. Ou comment&nbsp;&nbsp; faire entrer une girafe dans une Twingo en trois temps</li>
-        <li id="do"><a href="#">&raquo;&nbsp;Musique maestro</li>
-        <li id="se"><a href="#">&raquo;&nbsp;♬ J’entends le loup, le renard et la belette…</a></li>
-        <li id="char"><a href="#">&raquo;&nbsp;La véritable nature des Impalas</a></li>
+        <li id="yek"><a href="#">&raquo;&nbsp;Responsive design. Ou comment faire<br />
+       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  entrer une girafe dans une Twingo en trois<br />
+       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; temps</li><br />
+        <li id="do"><a href="#">&raquo;&nbsp;Musique maestro</li><br />
+        <li id="se"><a href="#">&raquo;&nbsp;♬ J’entends le loup, le renard et la belette…</li><br />
+        <li id="char"><a href="#">&raquo;&nbsp;La véritable nature des Impalas</li>
       </ul>
     </div>
   </div>
@@ -370,13 +391,15 @@ div.footerright {
     <br />
     <div class="leftmenu">
       <ul class="info">
-        <li > <img src="../layout/images/images/tell.jpg" width="20" height="20 " /> 6543338-6547896 </li>
+        <li id="tell" >&nbsp;03 20 26 96 25 </li>
         <br />
-        <li>@ &nbsp;&nbsp;akh@hhki.com</li>
+        <li id="emaila">@ &nbsp;&nbsp;contact@impala-webstudio.fr</li>
         <br />
-        <li> <img src="../layout/images/images/mail.jpg" width="20" height="20 " />&nbsp;&nbsp;france,paris,no656</li>
+        <li id="mail">&nbsp;&nbsp;43 rue Charlie Chaplin<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;59100 ROUBAIX</li>
         <br />
-        <li>&nbsp;&nbsp;map</li>
+        <li>&nbsp;&nbsp;Trouvez-nous rapidement<br />
+&nbsp;&nbsp;sur Google Maps</li>
       </ul>
     </div>
   </div>
