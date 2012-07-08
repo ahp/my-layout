@@ -109,11 +109,11 @@ div.content {
 	width:auto;
 	height:314px;
 }
-img.op {
+img.abc {
 	opacity:1.0;
 	filter:alpha(opacity=40); /* For IE8 and earlier */
 }
-img:hover {
+img.abc:hover {
 	opacity:0.6;
 	filter:alpha(opacity=100); /* For IE8 and earlier */
 }
@@ -200,16 +200,13 @@ h3 {
 	font-size:14px;
 }
 div.leftmenu {
-	
 }
 div.leftmenu ul {
 	width:220px;
-	
 }
 div.leftmenu li {
 	list-style-type:none;
 	list-style-position:inside;
-	
 }
 div.leftmenu a {
 	padding:15px 10px;
@@ -219,7 +216,7 @@ div.leftmenu a {
 	font-size:12px;
 	text-transform:capitalize;
 	text-align:justify;
-		line-height:10px;
+	line-height:10px;
 }
 /*---------------------------*/
 div.left1 {
@@ -241,26 +238,26 @@ div.right2 {
 	float:left;
 	padding:0 10px;
 }
-#tell{
+#tell {
 	list-style-image:url(images/images/tell.jpg);
 	list-style-position:inside;
 	background-color:#DBDF05;
 	line-height:15px;
 	width:120px;
-	}
-	#emaila{
-		background-color:#DBDF05;
-	
-		line-height:15px;}
-.info1{
+}
+#emaila {
+	background-color:#DBDF05;
+	line-height:15px;
+}
+.info1 {
 	font-family: candara, tahoma;
 	font-size:12px;
 	font-size:12px;
 	text-transform:capitalize;
 	text-align:justify;
-		line-height:10px;
-		color:#666;
-	}		
+	line-height:10px;
+	color:#666;
+}
 .info {
 	color:#999999;
 	font-family:Tahoma, Geneva, sans-serif;
@@ -280,14 +277,15 @@ div.right1 {
 	color:#FFFFFF;
 	padding-right:0;
 }
-#mail{
-		list-style-image:url(images/images/mail.jpg);
-		background-color:#DBDF05;
-		width:150px;
-		height:40px;}
-		
-		#map{
-			list-style-image:url(images/images/back5_09.gif);}
+#mail {
+	list-style-image:url(images/images/mail.jpg);
+	background-color:#DBDF05;
+	width:150px;
+	height:40px;
+}
+#map {
+	list-style-image:url(images/images/back5_09.gif);
+}
 #ok {
 	width:40px;
 	height:40px;
@@ -295,31 +293,55 @@ div.right1 {
 	color:#747372;
 	padding-left:0;
 }
-form :hover{
-	background-color:#CCC;}
-	
-	
-
+form input:hover {
+	background-color:#CCC;
+}
 /*.....................content2..*/
 div.footer {
 	width:auto;
 	height:150px
 }
 div.footerleft {
-	width:500px;
+	width:300px;
 	height:inherit;
 	float:left;
 	color:#999999;
 	font-size:12px;
+	padding-left:30px;
 }
-#copy a{
+#copy a {
 	color:#999999;
-	}
+}
+div.facebook {
+}
+div.facebook ul {
+	float:right;
+}
+div.facebook li {
+	float:right;
+	position:relative;
+	top:0px;
+}
 div.footerright {
 	width:auto;
 	height:inherit;
-	margin-left:550px;
+	float:right;
+	padding-right:30px;
 }
+.buttons {
+	background-color:#E2E1DD;
+	width:120px;
+	height:30px;
+	color:#666;
+	font-family: candara, tahoma;
+	font-size:12px
+}
+div.footercenter{
+	width:auto;
+	height:inherit;
+	margin:0 300px;}
+
+
 </style>
 </head>
 
@@ -351,7 +373,7 @@ div.footerright {
     <div class="left">
       <div class="imageleft">
         <h4> l equipe</h4>
-        <img src="images/images/visuel_equipe.jpg" width="300" height="109" alt="visuel_equipe" /> </div>
+        <img class="abc" src="images/images/visuel_equipe.jpg" width="300" height="109" alt="visuel_equipe" /> </div>
       <br />
       <br />
       <p class="textc"> C’est dans l’enceinte d’une ancienne école que l’équipe d’Impala Webstudio active ses méninges et sa créativité. Un lieu avant tout convivial, où le travail et la bonne humeur font bon ménage.</p>
@@ -359,14 +381,14 @@ div.footerright {
     <div class="right">
       <div class="imageright">
         <h4>en coulisses</h4>
-        <img src="images/images/visuel_coulisses.jpg" width="300" height="109" alt="visuel_cafe" /> </div>
+        <img class="abc"src="images/images/visuel_coulisses.jpg" width="300" height="109" alt="visuel_cafe" /> </div>
       <br />
       <br />
       <p class="textc">Les dessous de l’agence, la vie au 43 rue Charlie Chaplin, les dernières actualités, mais aussi les nouvelles réalisations... En parcourant notre blog, plongez dans les coulisses d’Impala Webstudio. </p>
     </div>
     <div class="center">
       <h4>en coulisses</h4>
-      <img src="images/images/visuel_cafe.jpg" width="300" height="109" alt="visuel_cafe" /> <br />
+      <img class="abc" src="images/images/visuel_cafe.jpg" width="300" height="109" alt="visuel_cafe" /> <br />
       <br />
       <br />
       <p class="textc">Grands buveurs de café que nous sommes, nous serons ravis de vous offrir une petite tasse de ce breuvage torréfié. Alors si vous passez dans le coin, n’hésitez pas ! ... Avec ou sans sucre ?</p>
@@ -391,76 +413,84 @@ div.footerright {
         </ul>
       </div>
     </div>
-    <div class="left2">
-    
-        <a href="#">
-          <h3>Quoi de neuf ?</h3>
+    <div class="left2"> <a href="#">
+      <h3>Quoi de neuf ?</h3>
+      <br />
+      <div class="leftmenu">
+        <ul>
+          <li id="yek"><a href="#">&raquo;&nbsp;
+            
+            Responsive design. Ou comment faire &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;entrer une girafe dans une Twingo &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; en trois temps</li>
+          <li id="do"><a href="#">&raquo;&nbsp;Musique maestro</li>
+          <li id="se"><a href="#">&raquo;&nbsp;♬ J’entends le loup, le renard et la &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;belette…</li>
+          <li id="char"><a href="#">&raquo;&nbsp;La véritable nature des Impalas</li>
+        </ul>
+      </div>
+    </div>
+    <div class="right2">
+      <h3>Restons en contact</h3>
+      <br />
+      <div class="leftmenu">
+        <ul class="info">
+          <li id="tell" >&nbsp;03 20 26 96 25 </li>
+          <li id="emaila">@ &nbsp;&nbsp;contact@impala-webstudio.fr</li>
+          <li id="mail">&nbsp;&nbsp;43 rue Charlie Chaplin<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;59100 ROUBAIX</li>
+          <li id="map">&nbsp;&nbsp;Trouvez-nous rapidement<br />
+            &nbsp;&nbsp;&nbsp;&nbsp; sur<a style="color:#666666" href="#"> Google Maps</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="right1">
+      <h3>Recevez notre Newsletter</h3>
+      <br />
+      <div class="leftmenu">
+        <ul>
+          <li class="info1">Restez informés des dernières actus et potins de l'agence !</li>
+          <br />
+          <li class="info">
+            <div class="form">
+              <form >
+                <input id="email" type="text" name="email" value="votr email ici" />
+                <input id="ok" type="submit" name="ok" value="ok" />
+              </form>
+            </div>
+          </li>
+          <br />
+          <li class="info"> Votre adresse email ne sera en aucun cas revendue, ou utilisée par une société autre que la nôtre. </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="dot">&nbsp;&nbsp;.....................................................................................................................................................................</div>
+  <br>
+  <br >
+  /*<div class="footer">
+    <div class="footerleft"><br />
+      copy right 2012 &nbsp;&copy; &nbsp;impala webstudio - Tous droits réservés.<br />
+      Site déclaré à la CNIL -<a  style="color:#666"id="copy" href="#"> Mentions légales</a>
      
-        <br />
-        <div class="leftmenu">
-      <ul>
-        <li id="yek"><a href="#">&raquo;&nbsp;
-
-    Responsive design. Ou comment faire entrer une girafe dans une Twingo en trois temps</li>
-        <li id="do"><a href="#">&raquo;&nbsp;Musique maestro</li>
-        <li id="se"><a href="#">&raquo;&nbsp;♬ J’entends le loup, le renard et la belette…</li>
-        <li id="char"><a href="#">&raquo;&nbsp;La véritable nature des Impalas</li>
-      </ul>
     </div>
-  </div>
-  <div class="right2">
-    <h3>Restons en contact</h3>
-    <br />
-    <div class="leftmenu">
-      <ul class="info">
-        <li id="tell" >&nbsp;03 20 26 96 25 </li>
-       
-        <li id="emaila">@ &nbsp;&nbsp;contact@impala-webstudio.fr</li>
-        
-        <li id="mail">&nbsp;&nbsp;43 rue Charlie Chaplin<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;59100 ROUBAIX</li>
-        
-        <li id="map">&nbsp;&nbsp;Trouvez-nous rapidement<br />
-&nbsp;&nbsp;&nbsp;&nbsp;sur<a href="#"> Google Maps</a></li>
-      </ul>
+    <div class="footerright">
+      <form  class="footerform">
+        <input class="buttons" type="button" name="Rejoignez-nous " value="Rejoignez-nous " />
+        <input class="buttons" type="button" name="Espace Client" value="Espace Client" />
+      </form>
     </div>
-  </div>
-  <div class="right1">
-    <h3>Recevez notre Newsletter</h3>
-    <br />
-    <div class="leftmenu">
-      <ul>
-        <li class="info1">Restez informés des dernières actus et potins de l'agence !</li>
-        <br />
-        <li class="info">
-          <div class="form">
-            <form >
-              <input id="email" type="text" name="email" value="votr email ici" />
-              
-              <input id="ok" type="submit" name="ok" value="ok" />
-            </form>
-          </div>
-        </li>
-        <br />
-        <li class="info">
-
-Votre adresse email ne sera en aucun cas revendue, ou utilisée par une société autre que la nôtre.
-</li>
-      </ul>
-    </div>
+   <div class="footercenter"> <div class="facebook">
+        <ul>
+          <li><img src="images/images/rrs.gif" width="26" height="26" /></li>
+          <li><img src="images/images/fr.gif" width="26" height="26" /></li>
+          <li><img src="images/images/back5_11.gif" width="26" height="28" /></li>
+          <li><img src="images/images/face.gif" width="25" height="26" /></li>
+        </ul>
+      </div>
+      <img  style=" padding-top:0px; padding-left:140px; position:relative;top:0;" src="images/images/flass.gif" width="187" height="79" />
+      
+      </div>
+   <div class="clear"></div> */
   </div>
 </div>
-<div class="dot">&nbsp;&nbsp;.....................................................................................................................................................................</div>
-<br>
-<br >
-<div class="footer">
-  <div class="footerleft"><br />
-    copy right 2012 &nbsp;&copy; &nbsp;impala webstudio - Tous droits réservés.<br />
-    
-Site déclaré à la CNIL -<a id="copy" href="#"> Mentions légales</a></div>
-  <div class="footerright"> <img src="../layout/images/images/back5_11.gif" width="100" height="142" /></div>
-</div>
-<div class="clear"></div>
 </div>
 </body>
 </html>
