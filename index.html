@@ -11,9 +11,10 @@
 	margin:0;
 }
 body {
+	background-color:#f5f4f2;
 }
 div {
-	outline:1px dashed black;
+	outline:0px dashed black;
 }
 div.container {
 	width:1024px;
@@ -74,7 +75,7 @@ div.menu li:hover {
  color:#3c3c3c;
 }
 div.menu li:active a {
-	color:3C3C3C;
+	color:#3C3C3C;
 }
 /*--------------menu-----*/
 div.text {
@@ -133,10 +134,11 @@ div.left {
 	height:133px;
 	margin:0 auto;
 }
-p.textc {
+.textc {
 	font-family: candara, tahoma;
-	font-size:14px;
+	font-size:15px;
 	color:#999;
+	line-height:15px;
 }
 img.op {
 	position:absolute;
@@ -145,11 +147,16 @@ img.op {
 h4 {
 	background-color:#CC0;
 	font-family:consolas, candara, tahoma;
-	font-size:16px;
+	font-size:22px;
 	text-transform:capitalize;
-	width:140px;
+	width:180px;
 	height:30px;
+	text-align:center;
+	text-decoration:none;
+	color:#000;	
 }
+h4 a:hover{
+	text-decoration:none;}
 /*-----------------right--------*/
 
 div.right {
@@ -216,7 +223,11 @@ div.leftmenu a {
 	font-size:12px;
 	text-transform:capitalize;
 	text-align:justify;
-	line-height:10px;
+ text-wrap:
+ line-height:10px;
+}
+div.leftmenu a:hover {
+	color:#000;
 }
 /*---------------------------*/
 div.left1 {
@@ -232,6 +243,12 @@ div.left2 {
 	padding:0 5px;
 	color:#666;
 }
+.title {
+	text-decoration:none;
+}
+a.title :hover {
+	color:#CCCCCC;
+}
 div.right2 {
 	width:200px;
 	height:inherit;
@@ -242,7 +259,7 @@ div.right2 {
 	list-style-image:url(images/images/tell.jpg);
 	list-style-position:inside;
 	background-color:#DBDF05;
-	line-height:15px;
+	line-height:0px;
 	width:120px;
 }
 #emaila {
@@ -293,7 +310,7 @@ div.right1 {
 	color:#747372;
 	padding-left:0;
 }
-form input:hover {
+input:hover {
 	background-color:#CCC;
 }
 /*.....................content2..*/
@@ -313,6 +330,7 @@ div.footerleft {
 	color:#999999;
 }
 div.facebook {
+	padding-right:30px;
 }
 div.facebook ul {
 	float:right;
@@ -336,12 +354,12 @@ div.footerright {
 	font-family: candara, tahoma;
 	font-size:12px
 }
-div.footercenter{
+div.footercenter {
 	width:auto;
 	height:inherit;
-	margin:0 300px;}
-
-
+	margin:0 250px;
+	padding-right:30px;
+}
 </style>
 </head>
 
@@ -368,27 +386,27 @@ div.footercenter{
       </div>
     </div>
   </div>
-  <div class="banner"> <img src="../layout/images/images/back5_03.gif" width="1024" height="343" alt="banner" /></div>
+  <div class="banner"> <a href="#"><img src="../layout/images/images/back5_03.gif" width="1024" height="343" alt="banner" /></a></div>
   <div class="content">
     <div class="left">
       <div class="imageleft">
-        <h4> l equipe</h4>
-        <img class="abc" src="images/images/visuel_equipe.jpg" width="300" height="109" alt="visuel_equipe" /> </div>
+       <a href="#"> <h4> l equipe</h4>
+        <img class="abc" src="images/images/visuel_equipe.jpg" width="300" height="109" alt="visuel_equipe" /> </a></div>
       <br />
       <br />
       <p class="textc"> C’est dans l’enceinte d’une ancienne école que l’équipe d’Impala Webstudio active ses méninges et sa créativité. Un lieu avant tout convivial, où le travail et la bonne humeur font bon ménage.</p>
     </div>
     <div class="right">
       <div class="imageright">
-        <h4>en coulisses</h4>
-        <img class="abc"src="images/images/visuel_coulisses.jpg" width="300" height="109" alt="visuel_cafe" /> </div>
+      <a href="#">  <h4>en coulisses</h4>
+        <img class="abc"src="images/images/visuel_coulisses.jpg" width="300" height="109" alt="visuel_cafe" /> </a></div>
       <br />
       <br />
       <p class="textc">Les dessous de l’agence, la vie au 43 rue Charlie Chaplin, les dernières actualités, mais aussi les nouvelles réalisations... En parcourant notre blog, plongez dans les coulisses d’Impala Webstudio. </p>
     </div>
     <div class="center">
-      <h4>en coulisses</h4>
-      <img class="abc" src="images/images/visuel_cafe.jpg" width="300" height="109" alt="visuel_cafe" /> <br />
+      <a href="#"><h4>en coulisses</h4>
+      <img class="abc" src="images/images/visuel_cafe.jpg" width="300" height="109" alt="visuel_cafe" /></a> <br />
       <br />
       <br />
       <p class="textc">Grands buveurs de café que nous sommes, nous serons ravis de vous offrir une petite tasse de ce breuvage torréfié. Alors si vous passez dans le coin, n’hésitez pas ! ... Avec ou sans sucre ?</p>
@@ -413,17 +431,17 @@ div.footercenter{
         </ul>
       </div>
     </div>
-    <div class="left2"> <a href="#">
+    <div class="left2"> <a class="title" href="#">
       <h3>Quoi de neuf ?</h3>
-      <br />
+      </a> <br />
       <div class="leftmenu">
         <ul>
-          <li id="yek"><a href="#">&raquo;&nbsp;
-            
-            Responsive design. Ou comment faire &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;entrer une girafe dans une Twingo &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; en trois temps</li>
-          <li id="do"><a href="#">&raquo;&nbsp;Musique maestro</li>
-          <li id="se"><a href="#">&raquo;&nbsp;♬ J’entends le loup, le renard et la &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;belette…</li>
-          <li id="char"><a href="#">&raquo;&nbsp;La véritable nature des Impalas</li>
+          <li id="yek"><a class="title" href="#">&raquo;&nbsp;Responsive design. Ou comment faire<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;entrer une girafe dans une Twingo en <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;trois temps </a></li>
+          <li id="do"><a class="title" href="#">&raquo;&nbsp;Musique maestro</a></li>
+          <li id="se"><a  class="title"href="#">&raquo;&nbsp;♬ J’entends le loup, le renard et la &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;belette…</a></li>
+          <li id="char"><a class="title" href="#">&raquo;&nbsp;La véritable nature des Impalas</a></li>
         </ul>
       </div>
     </div>
@@ -433,7 +451,7 @@ div.footercenter{
       <div class="leftmenu">
         <ul class="info">
           <li id="tell" >&nbsp;03 20 26 96 25 </li>
-          <li id="emaila">@ &nbsp;&nbsp;contact@impala-webstudio.fr</li>
+        <li id="emaila"> @&nbsp;&nbsp;contact@impala-webstudio.fr</li>
           <li id="mail">&nbsp;&nbsp;43 rue Charlie Chaplin<br />
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;59100 ROUBAIX</li>
           <li id="map">&nbsp;&nbsp;Trouvez-nous rapidement<br />
@@ -465,30 +483,27 @@ div.footercenter{
   <div class="dot">&nbsp;&nbsp;.....................................................................................................................................................................</div>
   <br>
   <br >
-  /*<div class="footer">
+  <div class="footer">
     <div class="footerleft"><br />
       copy right 2012 &nbsp;&copy; &nbsp;impala webstudio - Tous droits réservés.<br />
-      Site déclaré à la CNIL -<a  style="color:#666"id="copy" href="#"> Mentions légales</a>
-     
-    </div>
+      Site déclaré à la CNIL -<a  style="color:#666"id="copy" href="#"> Mentions légales</a> </div>
     <div class="footerright">
       <form  class="footerform">
         <input class="buttons" type="button" name="Rejoignez-nous " value="Rejoignez-nous " />
         <input class="buttons" type="button" name="Espace Client" value="Espace Client" />
       </form>
     </div>
-   <div class="footercenter"> <div class="facebook">
+    <div class="footercenter">
+      <div class="facebook">
         <ul>
-          <li><img src="images/images/rrs.gif" width="26" height="26" /></li>
-          <li><img src="images/images/fr.gif" width="26" height="26" /></li>
-          <li><img src="images/images/back5_11.gif" width="26" height="28" /></li>
-          <li><img src="images/images/face.gif" width="25" height="26" /></li>
+          <li><a href="#"><img src="images/images/rrs.gif" width="26" height="26" /></a></li>
+          <li><a href="#"><img src="images/images/fr.gif" width="26" height="26" /></a></li>
+          <li><a href="#"><img src="images/images/back5_11.gif" width="26" height="28" /></a></li>
+          <li><a href="#"><img src="images/images/face.gif" width="25" height="26" /></a></li>
         </ul>
       </div>
-      <img  style=" padding-top:0px; padding-left:140px; position:relative;top:0;" src="images/images/flass.gif" width="187" height="79" />
-      
-      </div>
-   <div class="clear"></div> */
+      <img  style=" padding-top:0px; padding-left:140px; position:relative;top:0;" src="images/images/flass.gif" width="187" height="79" /> </div>
+    <div class="clear"></div>
   </div>
 </div>
 </div>
