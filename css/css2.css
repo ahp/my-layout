@@ -76,6 +76,7 @@ div.menu li:active a {
 div.text {
 	background-color:#F5F4F2;
 	height:120px;
+	padding:0 30px;
 }
 h2 {
 	font-family: candara, tahoma;
@@ -96,8 +97,34 @@ p {
 
 div.banner {
 	width:auto;
+	padding:0 30px;
 	height:350px;
+	background-color:#f5f4f2;
+	position:relative;
+	padding-bottom:30px;
 }
+.ban{
+	border:5px solid #CCC;}
+
+h1.awwwards{
+	background-color:#000000;
+	color:#FFFFFF;
+	text-decoration:none;
+	text-transform:capitalize;
+	font-size:24px;
+	font-family:Arial, Helvetica, sans-serif;
+	display:inline;
+	position:absolute;
+	top:150px;
+	left:520px;
+	right:20px;
+	z-index:1;
+}
+div.aww{
+	float:right;
+	}
+	.awwwards span{
+		color:#FFFF00;}
 /*.....................content1..*/
 	
 /*------------------left--------*/
@@ -148,7 +175,12 @@ h4 {
 	height:30px;
 	text-align:center;
 	text-decoration:none;
-	color:#000;	
+	color:#000;
+	display:inline;
+	z-index:1;
+	position:absolute;
+	top:0;
+	left:0;
 }
 a.h44{
 	text-decoration:none;}
