@@ -224,13 +224,20 @@ div.leftmenu a {
 div.leftmenu a:hover {
 	color:#000;
 }
-/*---------------------------*/
+/*-------left1--------------------*/
+h3.efg{
+	margin-bottom:20px;}
 div.left1 {
 	width:190px;
 	height:inherit;
 	float:left;
 	padding:0 30px;
 }
+.yek{
+	margin-bottom:10px;
+	}
+/*-----left2----------------------*/
+
 div.left2 {
 	width:260px;
 	height:inherit;
@@ -250,43 +257,74 @@ div.right2 {
 	float:left;
 	padding:0 10px;
 }
-#tell {
+.tell {
 	background-image:url(../images/telll.png);
 	background-repeat:no-repeat;
 	background-position:left center;
-	padding-left:20px;
-	display:inline;
-	margin-bottom:30px;
+	padding-left:30px;
+	display:inline-block;
+	margin-bottom:10px;
+	font-family: candara, tahoma;
+	font-size:12px;
+	color:#999;
 	
 	
 }
-#tell span{
+.tell span{
 	background-color:#cc0;}
 
-#emaila {
+.emaila {
 	background-image:url(../images/emaila.png);
 	background-repeat:no-repeat;
 	background-position:left center;
-	padding-left:20px;
+	padding-left:30px;
 	display:block;
-	margin-bottom:20px;
-	background-color:#cc0;}
-#mail {
+	margin-bottom:10px;
+	background-color:#cc0;
+	font-family: candara, tahoma;
+	font-size:12px;
+	color:#999;}
+	.email span{background-color:#cc0;
+		}
+.mail {
 	background-image:url(../images/mail.png);
 	background-repeat:no-repeat;
 	background-position:left center;
-	padding-left:20px;
+	padding-left:30px;
 	display:inline;
 	margin-bottom:10px;
-	background-color:#cc0;
+	font-family: candara, tahoma;
+	font-size:12px;
+	color:#999;
+	
 }
-#map {
+.mail2 {
+	
+	background-repeat:no-repeat;
+	background-image:url(../images/images/mail2.gif);
+	background-position:left center;
+	padding-left:30px;
+	display:inline-block;
+	margin-bottom:20px;
+	font-family: candara, tahoma;
+	font-size:12px;
+	color:#999;
+	
+}
+.mail span{
+	background-color:#cc0}
+	.mail2 span{
+	background-color:#cc0}
+.map {
 		background-image:url(../images/map.png);
 	background-repeat:no-repeat;
 	background-position:left center;
-	padding-left:20px;
-	display:block;
+	padding-left:30px;
+	display:inline-block;
 	margin-bottom:10px;
+	font-family: candara, tahoma;
+	font-size:12px;
+	color:#999;
 	
 }
 .info1 {
